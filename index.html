@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sok Dara - Frontend Developer CV</title>
+<style>
+  :root {
+    --navy: #1b3a6b;
+    --navy-dark: #14294d;
+    --sidebar-bg: #e6e6e6;
+    --text-dark: #222;
+    --text-body: #333;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Verdana, Arial, sans-serif;
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    padding: 30px 10px;
+  }
+
+  .page {
+    background: #fff;
+    width: 850px;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    border: 8px solid #111;
+  }
+
+  /* ===== SIDEBAR ===== */
+  .sidebar {
+    background: var(--sidebar-bg);
+    padding: 30px 0 40px;
+  }
+
+  .photo-wrap {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 25px;
+    background: #6f8fd6;
+    border: 4px solid #fff;
+  }
+
+  .photo-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .side-section { margin-bottom: 22px; }
+
+  .side-banner {
+    background: var(--navy);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.15rem;
+    padding: 10px 20px;
+    margin-bottom: 14px;
+  }
+
+  .side-content {
+    padding: 0 22px;
+    color: var(--text-body);
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+
+  .side-content p { margin: 4px 0 10px; }
+  .side-content strong { display: block; color: var(--text-dark); }
+
+  .side-content ul {
+    margin: 0;
+    padding-left: 18px;
+  }
+
+  .side-content ul li { margin-bottom: 8px; }
+
+  /* ===== MAIN CONTENT ===== */
+  .main {
+    padding: 45px 45px 45px 35px;
+    border-left: 1px solid #222;
+  }
+
+  .name {
+    font-size: 3.2rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: var(--navy);
+    margin: 0 0 30px;
+  }
+
+  h2.section-title {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #111;
+    text-transform: uppercase;
+    margin: 28px 0 12px;
+  }
+
+  h2.section-title:first-of-type { margin-top: 0; }
+
+  .main p {
+    margin: 0 0 10px;
+    color: var(--text-body);
+    line-height: 1.6;
+    font-size: 0.98rem;
+    text-align: justify;
+  }
+
+  .main ul {
+    margin: 0 0 6px;
+    padding-left: 20px;
+  }
+
+  .main ul li {
+    color: var(--text-body);
+    line-height: 1.5;
+    margin-bottom: 8px;
+    font-size: 0.98rem;
+  }
+
+  @media (max-width: 700px) {
+    .page { grid-template-columns: 1fr; }
+    .main { border-left: none; border-top: 1px solid #222; }
+    .name { font-size: 2.3rem; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="photo-wrap">
+      <img src="photo//photo_2026-07-21_12-53-52.jpg" alt="Vann Chiva">
+    </div>
+
+    <div class="side-section">
+      <div class="side-banner">Contact</div>
+      <div class="side-content">
+        <strong>Phone</strong>
+        <p>012 345 678</p>
+        <p>Email: vannchiva16@gmail.com</p>
+        <strong>Current address</strong>
+        <p>Phnom Penh</p>
+      </div>
+    </div>
+
+    <div class="side-section">
+      <div class="side-banner">Technical Skills</div>
+      <div class="side-content">
+        <ul>
+          <li>HTML5 &amp; CSS3</li>
+          <li>JavaScript (ES6+)</li>
+          <li>React &amp; Next.js</li>
+          <li>Tailwind CSS / SASS</li>
+          <li>Git &amp; GitHub</li>
+          <li>REST API Integration</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="side-section">
+      <div class="side-banner">Soft Skills</div>
+      <div class="side-content">
+        <ul>
+          <li>Problem-Solving</li>
+          <li>Attention to Detail</li>
+          <li>Team Collaboration</li>
+          <li>Time Management</li>
+          <li>Communication</li>
+          <li>Adaptability</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="side-section">
+      <div class="side-banner">Language</div>
+      <div class="side-content">
+        <ul>
+          <li>Khmer: Good</li>
+          <li>English: Good</li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+    <h1 class="name">VANN CHIVA</h1>
+    <p style="margin-top:-20px; margin-bottom:25px; font-weight:600; color:#555; letter-spacing:1px;">FRONTEND DEVELOPER</p>
+
+    <h2 class="section-title">About Me</h2>
+    <p>Frontend Developer with hands-on experience building responsive, user-friendly web interfaces using HTML, CSS, JavaScript, and React. Passionate about clean code, performance, and translating design mockups into pixel-accurate, accessible websites. Quick learner who enjoys collaborating with designers and backend teams to ship polished products.</p>
+
+    <h2 class="section-title">Education Background</h2>
+    <ul>
+      <li>2019–2023: <strong>Bachelor of Information Technology, Royal University of Phnom Penh</strong></li>
+      <li>2023: <strong>Full-Stack Web Development Certificate, Codingate Academy</strong></li>
+    </ul>
+
+    <h2 class="section-title">Work Experience</h2>
+    <ul>
+      <li>2024–2025: <strong>Junior Frontend Developer</strong> — Built and maintained responsive company website and admin dashboard using React and Tailwind CSS.</li>
+      <li>2025–2026: <strong>Frontend Developer</strong> — Developed reusable UI components, integrated REST APIs, and improved page load speed by 30%.</li>
+    </ul>
+
+    <h2 class="section-title">Projects</h2>
+    <ul>
+      <li><strong>E-commerce Storefront</strong> — React + Tailwind CSS shop with cart, filters, and payment integration.</li>
+      <li><strong>Portfolio CMS</strong> — Next.js site with a headless CMS for freelance clients to manage their own content.</li>
+      <li><strong>Task Manager App</strong> — Drag-and-drop kanban board built with React, using local storage for persistence.</li>
+    </ul>
+
+    <h2 class="section-title">Declaration</h2>
+    <p>I certify that the information provided above is true and accurate to the best of my knowledge, and I am available for an interview at your convenience.</p>
+  </main>
+
+</div>
+
+</body>
+</html>
